@@ -27,6 +27,7 @@ const Form = () => {
     if (res.ok) {
       setMessage("Formulário enviado com sucesso!");
       setFormData({ nome: "", idade: "", email: "" });
+      window.location.href = "https://uneven-blend-18575113.figma.site/";
     } else {
       setMessage("Erro ao enviar formulário.");
     }
@@ -78,7 +79,6 @@ const Form = () => {
               className="w-full px-4 py-2 border border-border rounded-lg bg-background"
             />
           </div>
-
           <Button type="submit" className="w-full">
             Enviar
           </Button>
