@@ -41,7 +41,7 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="xl" className="min-w-[250px]">
+            <Button variant="hero" size="xl" className="min-w-[250px]" onClick={() => (window.location.href = "/form")}>
               Cadastre-se Gratuitamente
               <ArrowRight className="ml-2" />
             </Button>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Sparkles, Clock, Gift } from "lucide-react";
 
 const CTASection = () => {
@@ -44,13 +45,17 @@ const CTASection = () => {
           </div>
           
           {/* Main CTA */}
-          <Button 
-            variant="hero" 
-            size="xl"
-            className="min-w-[300px] text-lg animate-float"
+          {/* <Link to="/form"> */}
+            <Button 
+              variant="hero" 
+              size="xl"
+              className="min-w-[300px] text-lg animate-float"
+              onClick={() => (window.location.href = "/form")}
           >
             CADASTRE-SE AGORA GRATUITAMENTE
-          </Button>
+            </Button>
+          {/* </Link> */}
+          
           
           <p className="text-sm text-muted-foreground mt-6">
             Não pedimos cartão de crédito • Cancele quando quiser

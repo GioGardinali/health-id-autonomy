@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
+import { Link, X } from "lucide-react";
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,9 +37,11 @@ const FloatingCTA = () => {
           <p className="text-xs text-muted-foreground mb-3">
             Vagas limitadas para os primeiros usuários
           </p>
-          <Button variant="hero" size="sm" className="w-full">
-            Garantir minha vaga
-          </Button>
+          <Link to="/form" className="w-full">
+            <Button variant="hero" size="sm" className="w-full" onClick={() => (window.location.href = "/form")}>
+              Garantir minha vaga
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
